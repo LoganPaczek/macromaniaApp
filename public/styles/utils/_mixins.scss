@@ -1,0 +1,26 @@
+@mixin text-highlight-1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+@mixin text-highlight-2 {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-space-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

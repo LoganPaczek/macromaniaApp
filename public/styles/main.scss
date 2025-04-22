@@ -1,0 +1,11 @@
+// main style
+body.no-scroll{
+    overflow: hidden;
+}
+
+// Global Ressources
+@import '../mixins';
+@import '../variables';
+
+
+// Components
