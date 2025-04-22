@@ -1,0 +1,33 @@
+@import '../../utils/mixins';
+@import '../../utils/variables';
+
+
+#headerTitle{
+    text-align: center;
+    position: relative;
+    background-color: $main-white;
+
+    #burgerButton{
+        width: $thirty-pixels-value;
+        height: $thirty-pixels-value;
+        position: absolute;
+        left: $ten-pixels-value;
+        top: $half-percentage-value;
+        transform: translateY(-$half-percentage-value);
+        cursor: pointer;
+        display: none;
+
+        @media screen and (max-width: 700px){
+            display: block;
+        }
+    }
+
+    h1{
+        padding: 15px;
+        @include text-highlight-1;
+
+        @media screen and (max-width: 350px){
+            font-size: 1.7em;
+        }
+    }
+}

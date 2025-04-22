@@ -1,0 +1,30 @@
+#headerTitle {
+  text-align: center;
+  position: relative;
+  background-color: #FFFFFF;
+}
+#headerTitle #burgerButton {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: none;
+}
+@media screen and (max-width: 700px) {
+  #headerTitle #burgerButton {
+    display: block;
+  }
+}
+#headerTitle h1 {
+  padding: 15px;
+  font-size: 2em;
+  font-weight: bold;
+}
+@media screen and (max-width: 350px) {
+  #headerTitle h1 {
+    font-size: 1.7em;
+  }
+}/*# sourceMappingURL=HeaderTitle.css.map */

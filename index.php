@@ -10,15 +10,17 @@ error_reporting(E_ALL);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?php include_once('./src/views/components/Head.php') ?>
+    <?php include_once('./views/components/Head.php') ?>
     <title>Gestion des stocks</title>
 </head>
 <body>
     <header>
-
+        <?php include_once('./views/components/header/HeaderTitle.php') ?>
+        <?php include_once('./views/components/header/HeaderSearchBar.php') ?>
+        <?php include_once('./views/components/header/HeaderFilter.php') ?>
     </header>
     <main>
-
+        <?php include_once('./views/components/main/ItemSection.php') ?>
     </main>
 </body>
 </html>

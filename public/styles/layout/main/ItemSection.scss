@@ -1,0 +1,74 @@
+@import '../../utils/mixins';
+@import '../../utils/variables';
+
+#itemsContainer{
+    gap: 70px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: $fifty-pixels-value;
+    margin-bottom: $fifty-pixels-value;
+
+    .itemContainer{
+        background-color: $main-grey;
+        max-width: 300px;
+        max-height: 450px;
+        width: calc(25% - 70px);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .itemPictureContainer{
+            width: 95%;
+            height: 250px;
+            margin-top: $twenty-pixels-value;
+
+            img{
+                object-fit: cover;
+                width: $full-percentage-value;
+                height: $full-percentage-value;
+            }
+        }
+
+        .itemNameContainer{
+            .itemName{
+                font-size: 1.2em;
+                font-weight: 700;
+                color: $main-white;
+                margin: $ten-pixels-value;
+            }
+        }
+
+        .itemDisponibilityContainer{
+            text-align: center;
+            width: $full-percentage-value;
+            margin-top: $ten-pixels-value;
+
+            .itemDisponibility{
+                @include text-highlight-2;
+                padding: 15px;
+                color: $main-white;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    #itemsContainer{
+        grid-template-columns: repeat(3, minmax(1fr));
+        gap: $twenty-pixels-value;
+        justify-content: space-evenly;
+    }
+
+    #itemsContainer .itemContainer{
+        width: $full-percentage-value;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #itemsContainer{
+        margin-top: 0px;
+    }
+}

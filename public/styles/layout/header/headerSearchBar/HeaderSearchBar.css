@@ -1,0 +1,56 @@
+#searchBar {
+  background-color: #354CE3;
+  padding: 30px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#searchBar p {
+  font-size: 2em;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+@media screen and (max-width: 700px) {
+  #searchBar p {
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width: 350px) {
+  #searchBar p {
+    font-size: 1.2em;
+  }
+}
+#searchBar #searchBarButton {
+  background-color: #FFFFFF;
+  border-radius: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#searchBar #searchBarButton input {
+  border: none;
+  outline: none;
+  font-size: 1.2em;
+  width: 150px;
+}
+@media screen and (max-width: 700px) {
+  #searchBar #searchBarButton input {
+    width: 100px;
+  }
+}
+#searchBar #searchBarButton svg {
+  width: 30px;
+  margin-left: 20px;
+  fill: #343434;
+}
+@media screen and (max-width: 700px) {
+  #searchBar #searchBarButton svg {
+    width: 25px;
+  }
+}
+@media screen and (max-width: 400px) {
+  #searchBar {
+    padding: 30px 20px;
+  }
+}/*# sourceMappingURL=HeaderSearchBar.css.map */

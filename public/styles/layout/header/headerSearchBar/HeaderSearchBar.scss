@@ -1,0 +1,53 @@
+@import '../../utils/mixins';
+@import '../../utils/variables';
+
+#searchBar{
+    background-color: $main-blue;
+    padding: $thirty-pixels-value $fifty-pixels-value;
+    @include flex-space-between;
+
+    p{
+        @include text-highlight-1;
+        color: $main-white;
+
+        @media screen and (max-width: 700px){
+            font-size: $font-size-small;
+        }
+
+        @media screen and (max-width: 350px){
+            font-size: $font-size-base;
+        }
+    }
+
+    #searchBarButton{
+        background-color: $main-white;
+        border-radius: $fifty-pixels-value;
+        padding: $ten-pixels-value;
+        @include flex-center;
+
+        input{
+            border: none;
+            outline: none;
+            font-size: $font-size-base;
+            width: 150px;
+
+            @media screen and (max-width: 700px){
+                width: 100px;
+            }
+        }
+
+        svg{
+            width: $thirty-pixels-value;
+            margin-left: $twenty-pixels-value;
+            fill: $main-grey;
+
+            @media screen and (max-width: 700px){
+                width: 25px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 400px){
+        padding: $thirty-pixels-value $twenty-pixels-value;
+    }
+}

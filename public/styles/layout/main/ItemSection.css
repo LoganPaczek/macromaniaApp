@@ -1,0 +1,63 @@
+#itemsContainer {
+  gap: 70px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+#itemsContainer .itemContainer {
+  background-color: #343434;
+  max-width: 300px;
+  max-height: 450px;
+  width: calc(25% - 70px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#itemsContainer .itemContainer .itemPictureContainer {
+  width: 95%;
+  height: 250px;
+  margin-top: 20px;
+}
+#itemsContainer .itemContainer .itemPictureContainer img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+#itemsContainer .itemContainer .itemNameContainer .itemName {
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin: 10px;
+}
+#itemsContainer .itemContainer .itemDisponibilityContainer {
+  text-align: center;
+  width: 100%;
+  margin-top: 10px;
+}
+#itemsContainer .itemContainer .itemDisponibilityContainer .itemDisponibility {
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 15px;
+  color: #FFFFFF;
+}
+
+@media screen and (max-width: 1200px) {
+  #itemsContainer {
+    grid-template-columns: repeat(3, minmax(1fr));
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+  #itemsContainer .itemContainer {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 700px) {
+  #itemsContainer {
+    margin-top: 0px;
+  }
+}/*# sourceMappingURL=ItemSection.css.map */
