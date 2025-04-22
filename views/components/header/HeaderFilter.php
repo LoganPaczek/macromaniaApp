@@ -9,7 +9,7 @@
     foreach ($categories as $category):
     $categoryName = $category['libelle_type'];
     ?>
-    <a href="?<?php echo ($selectedType === $categoryName) ? '?' : '?type=' . urlencode($categoryName); ?>">
+        <a href="<?php echo ($selectedType === $categoryName) ? './' : '?type=' . urlencode($categoryName); ?>">
         <div class="filterContainer <?php echo ($selectedType === $categoryName) ? 'active' : ''; ?>">
             <p>
                 <?php echo htmlspecialchars($categoryName) ?>

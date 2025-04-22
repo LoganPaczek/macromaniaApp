@@ -25,4 +25,17 @@ function getTypeId($libelleType) {
         return [];
     }
 }
+
+function getTypeLibelle($typeId) {
+    $pdo = connectToDatabase();
+
+    try {
+        $query = $pdo->prepare("SELECT libelle_type FROM type WHERE id_type = :typeId");
+        $query->execute(['typeId' => $typeId]);
+        return $query->fetch(PDO::FETCH_ASSOC);
+    } catch (PDOException $e) {
+        error_log("Erreur lors de la récupération du libelle : " . $e->getMessage());
+        return [];
+    }
+}
 ?>
