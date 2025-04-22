@@ -21,6 +21,8 @@ error_reporting(E_ALL);
     </header>
     <main>
         <?php include_once('./views/components/main/ItemSection.php') ?>
+        <?php include_once('./views/components/main/Modal.php') ?>
     </main>
+    <?php include_once('./views/components/footer/Footer.php') ?>
 </body>
 </html>

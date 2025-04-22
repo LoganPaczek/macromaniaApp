@@ -6,6 +6,8 @@
 
 <link rel="stylesheet" href="./public/styles/layout/main/ItemSection.css">
 
+<link rel="stylesheet" href="./public/styles/layout/footer/Footer.css">
+
 <link rel="stylesheet" href="./public/styles/reset.css">
 
 
@@ -13,3 +15,4 @@
 
 <script src="./public/js/filterButton.js" defer></script>
 <script src="./public/js/searchBar.js" defer></script>
+<script src="./public/js/getItemDescription.js" defer></script>

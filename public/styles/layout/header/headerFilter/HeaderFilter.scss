@@ -30,7 +30,7 @@
         p{
             padding: $twenty-pixels-value $thirty-pixels-value;
             color: $second-grey;
-            font-size: 1em;
+            font-size: $font-size-tiny;
         }
 
         i{
@@ -59,10 +59,10 @@
 @media screen and (max-width:700px){
     #headerFilter{
         overflow: hidden;
-        max-height: 0px;
+        max-height: $zero-pixels-value;
         display: flex;
         flex-direction: column;
-        margin-top: 0px;
+        margin-top: $zero-pixels-value;
         padding-top: $ten-pixels-value;
         background-color: $main-white;
 
