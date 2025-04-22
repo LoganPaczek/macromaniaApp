@@ -12,3 +12,4 @@
 
 
 <script src="./public/js/filterButton.js" defer></script>
+<script src="./public/js/searchBar.js" defer></script>
