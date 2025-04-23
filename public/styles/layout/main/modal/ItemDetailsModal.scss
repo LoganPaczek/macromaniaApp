@@ -1,0 +1,137 @@
+@import '../../../utils/mixins';
+@import '../../../utils/variables';
+
+
+#overlay{
+    @include flex-center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #000000c5;
+    display: none;
+    height: $full-percentage-value;
+    width: $full-percentage-value;
+
+    #modal{
+        background-color: #D9D9D9;
+        width: 60%;
+        height: 60%;
+        border-radius: $ten-pixels-value;
+        position: relative;
+        @include flex-center;
+
+        #closeItemDetails{
+            height: $fifty-pixels-value;
+            width: $fifty-pixels-value;
+            position: absolute;
+            top: $ten-pixels-value;
+            right: $twenty-pixels-value;
+            cursor: pointer;
+        }
+
+        #leftPart{
+            width: 40%;
+            height: 80%;
+            @include flex-center;
+            flex-direction: column;
+
+            #pictureContainer{
+                width: 70%;
+                height: 88%;
+                @include flex-center;
+                background-color: #343434;
+
+                img{
+                    width: 95%;
+                    height: 95%;
+                }
+            }
+
+            #itemDisponibilityContainer{
+                width: 70%;
+                height: 12%;
+                background-color: #DC6C0A;
+                font-size: 1.5em;
+                font-weight: bold;
+                margin-top: $ten-pixels-value;
+                @include flex-center;
+
+                #disponibility{
+                    color: $main-white;
+                }
+            }
+        }
+
+        #rightPart{
+            width: 60%;
+            height: 80%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            p{
+                margin-right: $ten-pixels-value;
+                @include text-highlight-1;
+
+                &:not(:nth-child(1)){
+                    @include text-highlight-2;
+                }
+
+                span{
+                    font-weight:lighter;
+                    font-size: 1.2em;
+                }
+            }
+
+            #description{
+                font-weight: bold;
+            }
+
+            ul{
+                font-size: 1.2em;
+                margin-left: $fifty-pixels-value;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1500px){
+    #overlay {
+        #modal{
+            width: 90%;
+            height: 90%;
+
+            #leftPart{
+                width: $half-percentage-value;
+            }
+
+            #rightPart{
+                width: $half-percentage-value;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px){
+    #overlay {
+        #modal{
+            width: $full-percentage-value;
+
+            #leftPart{
+                #pictureContainer{
+                    width: $full-percentage-value;
+                }
+
+                #itemDisponibilityContainer{
+                    width: $full-percentage-value;
+                }
+            }
+
+            #rightPart{
+                ul{
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}

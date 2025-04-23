@@ -5,6 +5,8 @@
 <link rel="stylesheet" href="./public/styles/layout/header/headerFilter/HeaderFilter.css">
 
 <link rel="stylesheet" href="./public/styles/layout/main/ItemSection.css">
+<link rel="stylesheet" href="./public/styles/layout/main/addItemButton/AddItemButton.css">
+<link rel="stylesheet" href="./public/styles/layout/main/modal/ItemDetailsModal.css">
 
 <link rel="stylesheet" href="./public/styles/layout/footer/Footer.css">
 

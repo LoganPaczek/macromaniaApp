@@ -1,0 +1,20 @@
+@import '../../../utils/mixins';
+@import '../../../utils/variables';
+
+#addItemContainer{
+    background-color: $main-blue;
+    position: sticky;
+    float: right;
+    bottom: $twenty-pixels-value;
+    right: $twenty-pixels-value;
+    border-radius: $fifty-pixels-value;
+    padding: $twenty-pixels-value;
+    max-width: 300px;
+    cursor: pointer;
+
+    p{
+        text-align: center;
+        @include text-highlight-2;
+        color: $main-white;
+    }
+}

@@ -22,6 +22,7 @@ error_reporting(E_ALL);
     <main>
         <?php include_once('./views/components/main/ItemSection.php') ?>
         <?php include_once('./views/components/main/Modal.php') ?>
+        <?php include_once('./views/components/main/AddItemButton.php') ?>
     </main>
     <?php include_once('./views/components/footer/Footer.php') ?>
 </body>
